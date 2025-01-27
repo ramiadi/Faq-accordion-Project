@@ -7,8 +7,10 @@ detailsEls.forEach((detailsEl) => {
   detailsEl.addEventListener("toggle", () => {
     if (detailsEl.open) {
       img.src = "assets/images/icon-minus.svg"; // Image for open state
+      img.alt = "Minus icon";
     } else {
       img.src = "assets/images/icon-plus.svg"; // Image for closed state
+      img.alt = "Plus icon";
     }
   });
 });
