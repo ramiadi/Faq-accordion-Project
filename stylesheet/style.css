@@ -2,18 +2,80 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .box {
   margin: 0 auto;
-  width: 700px;
-  background-color: aqua;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  max-width: 600px;
+  width: 100%;
 }
 
 .upper-box {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  margin-bottom: 1em;
 }
+
 .upper-box h1 {
+  font-size: 1.5em;
+  color: #1d1e35;
+}
+
+details {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1em 0;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: #1d1e35;
+  cursor: pointer;
+}
+
+summary img {
+  margin-left: 10px;
+}
+
+details[open] summary {
+  color: #4b4c5f;
+}
+
+details p {
+  margin: 0.5em 0 0;
+  color: #4b4c5f;
+  font-size: 0.9em;
+}
+
+.attribution {
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: 2em;
+  color: #888;
+}
+
+.attribution a {
+  color: #3b49df;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .box {
+    margin: 1em;
+    padding: 1.5em;
+  }
 }
