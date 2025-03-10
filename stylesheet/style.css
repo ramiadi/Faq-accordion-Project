@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  margin: 0 auto;
+  width: 700px;
+  background-color: aqua;
+}
+
+.upper-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.upper-box h1 {
+}
